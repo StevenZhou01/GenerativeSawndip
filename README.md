@@ -6,8 +6,6 @@ Sawndip is the traditional writing system used by Tai-speaking people including 
 
 Generative Sawndip is a generative art project creating new Sawndip characters for the Zhuang minority language.
 
-```markdown
-
 [Examples of Generative Characters]()
 
 [Generative paragraph]()
@@ -16,7 +14,6 @@ Generative Sawndip is a generative art project creating new Sawndip characters f
 
 [Generating Process]()
 
-```
 [Credits & Acknowledgement]()
 
 For more details see [Research & Documentation](https://observablehq.com/@stevenzhou01/cultural-identity-and-new-media-project).
