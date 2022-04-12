@@ -8,7 +8,7 @@ Generative Sawndip is a generative art project creating new Sawndip characters f
 
 [Examples of Generative Characters]()
 
-[Generative paragraph]()
+[The Orphan Girl and the Rich Girl]()
 
 [Character Generator]()
 
