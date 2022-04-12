@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
+## Generative Sawndip
 
-You can use the [editor on GitHub](https://github.com/StevenZhou01/GenerativeSawndip/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+Image1 Image2
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Sawndip is the traditional writing system used by Tai-speaking people including Bouyei, Nùng, Tày, and Zhuang. 
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Generative Sawndip is a generative art project creating new Sawndip characters for the Zhuang minority language.
 
 ```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+[Examples of Generative Characters]()
 
-- Bulleted
-- List
+[Generative paragraph]()
 
-1. Numbered
-2. List
+[Character Generator]()
 
-**Bold** and _Italic_ and `Code` text
+[Generating Process]()
 
-[Link](url) and ![Image](src)
 ```
+[Credits & Acknowledgement]()
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/StevenZhou01/GenerativeSawndip/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+For more details see [Research & Documentation](https://observablehq.com/@stevenzhou01/cultural-identity-and-new-media-project).
