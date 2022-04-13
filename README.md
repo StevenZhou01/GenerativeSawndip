@@ -1,6 +1,6 @@
 ## Generative Sawndip
 
-<img width="200" alt="computer" src="https://user-images.githubusercontent.com/89897082/163217563-f8b31502-de5d-43d7-941a-620195a10498.png"><img width="200" alt="Sawndip" src="https://user-images.githubusercontent.com/89897082/163217654-2d6ace05-77b0-42cb-b777-dd280ac7a02e.png">
+<img width="150" alt="Screen Shot 2022-04-13 at 11 50 34 PM" src="https://user-images.githubusercontent.com/89897082/163220288-55ab0ca5-10bc-49be-a112-c0bc65216fba.png"><img width="150" alt="Screen Shot 2022-04-13 at 11 47 40 PM" src="https://user-images.githubusercontent.com/89897082/163220299-4fb8e17f-1651-49e9-a93a-769316ad5ef3.png">
 
 *Dennauj Sawndip (Computer Sawndip Characters)*
 
