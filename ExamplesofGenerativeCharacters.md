@@ -1,7 +1,8 @@
+## Examples of Generative Characters
 
+Choose a word!
 
-<label for="selector">Choose a word:</label>
-     <select name="selector" id="selector">
+<select>
         <option value="zhuangpeople">Zhuang people</option>
         <option value="sawndip">Sawndip</option>
         <option value="zhuanglanguage">Zhuang language</option>
@@ -12,3 +13,7 @@
         <option value="earth">Earth</option>
         <option value="water">Water</option>
         <option value="mountain">Mountain</option>
+
+</select>
+
+Use your mouse to see the used Chinese characters
