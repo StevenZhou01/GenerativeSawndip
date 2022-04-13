@@ -1,6 +1,6 @@
 ## Generative Sawndip
 
-Image1 Image2
+<img src="${await FileAttachment("computer").url()}"style=" height: 200px"><img src="${await FileAttachment("Sawndip").url()}"style=" height: 200px">
 
 Sawndip is the traditional writing system used by Tai-speaking people including Bouyei, Nùng, Tày, and Zhuang. 
 
