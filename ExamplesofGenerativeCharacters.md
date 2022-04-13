@@ -14,8 +14,6 @@ Choose a word!
         <option value="water">Water</option>
         <option value="mountain">Mountain</option>
 
-</select>
-
 Use your mouse to see the used Chinese characters
 
 <script value="zhuangpeople">
