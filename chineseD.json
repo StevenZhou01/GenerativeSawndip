@@ -3,7 +3,7 @@
     "characters":[{
         "character": "⺼",
         "definition": "meat, flesh; organic compound",
-        "pinyin": [" "],
+        "pinyin": ["yuè"],
         "decomposition": "？",
         "radical": "⺼"
     },
@@ -17,13 +17,13 @@
         "radical": "尸"
     },
     {
-        "character": "㐌",
-        "definition": "a tribe of savages in South China",
-        "pinyin": [
-            "yí"
+       "character": "由",
+        "definition": "cause, reason; from",
+        "pinyin": [
+            "yóu"
         ],
-        "decomposition": "⿱亻也",
-        "radical": "亻"
+"decomposition": "田",
+"radical": "田"
     },{
         "character": "㥯",
         "definition": "careful, prudent; compassionate; grieved; worried",
@@ -49,13 +49,13 @@
         "decomposition": "⿵冂？",
         "radical": "用"
     },{
-        "character": "讠",
-        "definition": "words, speech; to speak, to say",
-        "pinyin": [
-            "yán"
+        "character": "雨",
+        "definition": "rain",
+        "pinyin": [
+            "yǔ"
         ],
-        "decomposition": "⿻？？",
-        "radical": "讠"
+         "decomposition": "⿻帀？",
+         "radical": "雨"
     }, {
         "character": "呀",
         "definition": "particle used to express surprise",
@@ -80,6 +80,13 @@
         ],
         "decomposition": "⿱亠⿱二口",
         "radical": "言"
-    }
-                 ]
-}
+    },{
+      "character": "燕",
+        "definition": "lovebird, swallow",
+        "pinyin": [
+               "yàn"
+        ],
+        "decomposition": "⿱⿱廿⿻口北灬",
+         "radical": "灬"
+         }
+
