@@ -82,11 +82,8 @@ let item;
 let d;
   
 function setup() {
-  canvas = createCanvas(580, 400);
-  canvas.position(windowWidth/2-300,windowheight/2-200);
   colorMode(HSB, 100);
   sel = createSelect();
-  sel.position(370, 270);
   sel.option('Zhuang people');
   sel.option('Sawndip');
   sel.option('Zhuang language');
@@ -102,6 +99,9 @@ function setup() {
 }
 
 function draw() {
+  canvas = createCanvas(580, 400);
+  canvas.position(windowWidth/2-500,windowHeight/2-190);
+  sel.position(windowWidth/2-500,windowHeight/2-210);
   background(96);
   item = sel.value();
   console.log(item);
