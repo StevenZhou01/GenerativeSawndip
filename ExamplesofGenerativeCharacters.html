@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Generative Sawndip | GenerativeSawndip</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Generative Sawndip" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Generative Language Art Project" />
+<meta property="og:description" content="Generative Language Art Project" />
+<link rel="canonical" href="https://stevenzhou01.github.io/GenerativeSawndip/" />
+<meta property="og:url" content="https://stevenzhou01.github.io/GenerativeSawndip/" />
+<meta property="og:site_name" content="GenerativeSawndip" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Generative Sawndip" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Generative Language Art Project","headline":"Generative Sawndip","name":"GenerativeSawndip","url":"https://stevenzhou01.github.io/GenerativeSawndip/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link rel="stylesheet" href="/GenerativeSawndip/assets/css/style.css?v=2e6fe7b181c29a64a12118f95920b48b1df21686">
+    <script src="/GenerativeSawndip/assets/js/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/GenerativeSawndip/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header >
+        <h1>GenerativeSawndip</h1>
+        
+          <p>Generative Language Art Project</p>
+        
+        
+      </header>
+      <section>
+
+      <h2>Examples of Generative Characters</h2>
+
+<p>Choose a word!</p>
+<p>Use your mouse to see the used Chinese characters</p>   
+
+<script >
+  
+ 
+
+let chr01;
+
+let Chr1;
+
+let zhuang 
+
+let rule;
+
+let c1 = "black";
+let c2 = "black";
+
+var canvas;
+
+let sel;
+let item;
+let d;
+  
+function setup() {
+  canvas = createCanvas(580, 400);
+  canvas.position(360,290);
+  colorMode(HSB, 100);
+  sel = createSelect();
+  sel.position(360, 270);
+  sel.option('Zhuang people');
+  sel.option('Sawndip');
+  sel.option('Zhuang language');
+  sel.option('Han Chinese');
+  sel.option('I, me');
+  sel.option('You');
+  sel.option('Heaven');
+  sel.option('Water');
+  sel.option('Earth');
+  sel.option('Mountain');
+  sel.selected('Zhuang people');
+ 
+}
+
+function draw() {
+  background(96);
+  item = sel.value();
+  console.log(item);
+  if(item == "Zhuang language"){
+  chr01 = {
+  character: "文",
+  strokes: [
+    "M 420 777 Q 448 753 480 724 Q 498 708 517 710 Q 530 711 536 728 Q 540 747 528 783 Q 521 805 485 819 Q 400 846 384 836 Q 378 830 380 815 Q 386 802 420 777 Z",
+    "M 528 568 Q 553 574 753 603 Q 766 602 776 616 Q 777 631 751 643 Q 709 670 625 641 Q 424 593 256 571 Q 225 568 193 562 Q 159 558 185 537 Q 224 507 258 515 Q 364 539 496 563 L 528 568 Z",
+    "M 507 261 Q 553 339 576 447 Q 582 480 591 501 Q 598 514 588 525 Q 558 561 528 568 C 500 579 493 582 496 563 Q 495 560 496 555 Q 526 444 468 318 Q 464 311 461 302 L 442 267 Q 385 183 252 131 Q 204 115 137 95 Q 125 94 120 90 Q 113 86 123 79 Q 130 76 146 78 Q 261 85 347 123 Q 414 150 482 225 L 507 261 Z",
+    "M 482 225 Q 525 164 676 38 Q 698 16 734 16 Q 842 17 928 32 Q 974 39 970 51 Q 969 58 922 69 Q 732 114 678 141 Q 612 172 507 261 L 461 302 Q 415 345 368 394 Q 326 437 288 437 Q 269 437 265 432 Q 264 425 280 412 Q 331 384 442 267 L 482 225 Z",
+  ],
+};
+
+Chr1 = {
+  character: "文",
+  definition: "culture, literature, writing",
+  pinyin: ["wén"],
+  decomposition: "⿱亠乂",
+  radical: "文",
+};
+
+zhuang = {
+  pos: "name",
+  word: "Vahcuengh",
+  sound: "/βa˧ ɕuːŋ˧/",
+  meaning: ["the Zhuang languages"],
+};
+
+rule = 4;  
+d = "NA";
+  }else if (item == "Earth"){
+chr01 = {
+  character: "地",
+  strokes: [
+    "M 292 431 Q 376 461 382 466 Q 389 475 384 482 Q 377 492 349 495 Q 321 496 295 483 Q 294 483 294 482 L 244 459 Q 154 429 124 423 Q 91 413 117 401 Q 151 389 224 409 Q 233 412 245 415 L 292 431 Z",
+    "M 286 229 Q 290 334 292 431 L 294 482 Q 294 599 315 684 Q 318 696 296 711 Q 259 730 232 734 Q 214 738 206 728 Q 199 721 207 704 Q 237 662 237 634 Q 241 550 244 459 L 245 415 Q 245 318 242 211 C 241 181 285 199 286 229 Z",
+    "M 242 211 Q 190 190 134 167 Q 118 160 88 157 Q 75 154 74 143 Q 73 130 84 122 Q 109 109 146 93 Q 156 92 168 102 Q 195 129 346 223 Q 367 236 382 250 Q 394 260 393 269 Q 387 273 375 270 Q 332 251 286 229 L 242 211 Z",
+    "M 473 369 Q 513 393 580 428 L 627 454 Q 675 482 738 514 Q 757 521 762 510 Q 772 494 735 332 Q 731 289 700 300 Q 681 306 661 310 Q 648 311 651 304 Q 657 294 719 240 Q 741 216 757 237 Q 791 280 798 343 Q 808 406 818 470 Q 825 504 853 535 Q 863 551 848 562 Q 829 572 780 579 Q 761 582 749 569 Q 724 545 630 489 L 583 463 Q 541 444 497 421 Q 485 417 475 411 L 432 391 Q 377 369 341 355 Q 328 352 328 343 Q 328 336 369 326 Q 394 319 415 334 Q 419 338 432 345 L 473 369 Z",
+    "M 580 428 Q 565 263 574 233 Q 580 220 590 226 Q 612 250 617 331 Q 621 395 627 454 L 630 489 Q 643 699 658 753 Q 668 774 655 787 Q 639 803 609 819 Q 585 829 560 820 Q 547 811 562 794 Q 586 742 589 696 Q 593 597 583 463 L 580 428 Z",
+    "M 973 161 Q 958 201 944 318 Q 944 334 937 338 Q 931 341 927 324 Q 905 201 885 162 Q 869 135 811 120 Q 682 86 560 140 Q 512 165 497 197 Q 476 234 473 300 Q 472 333 473 369 L 475 411 Q 478 472 487 539 Q 491 557 479 566 Q 466 579 442 586 Q 429 590 421 585 Q 414 581 420 563 Q 435 526 433 488 Q 432 436 432 391 L 432 345 Q 433 221 451 176 Q 460 139 493 108 Q 604 20 811 49 Q 836 55 862 62 Q 916 80 966 121 Q 985 136 973 161 Z",
+  ],
+};
+
+Chr1 = {
+  character: "地",
+  definition:
+    "earth, ground, soil; land, region; structural particle used before a verb",
+  pinyin: ["dì"],
+  decomposition: "⿰土也",
+  radical: "土",
+};
+
+zhuang = {
+  pos: "noun",
+  word: "doem",
+  sound: "/tom˨˦/",
+  meaning: ["soil; earth; dirt"],
+};
+
+rule = 4;
+d = "NA";
+  }else if (item == "You"){
+    chr01 = {
+  character: "茫",
+  strokes: [
+    "M 662 660 Q 705 670 841 659 Q 857 658 862 667 Q 868 679 854 694 Q 806 739 702 714 Q 692 714 682 711 L 621 701 Q 527 689 419 675 L 370 670 Q 286 663 196 654 Q 166 651 187 635 Q 229 608 287 616 Q 333 628 377 634 L 421 642 Q 463 651 612 658 L 662 660 Z",
+    "M 419 675 Q 416 717 415 750 Q 416 769 396 776 Q 357 797 333 790 Q 314 781 329 761 Q 360 718 370 670 L 377 634 Q 389 559 403 544 Q 416 532 422 545 Q 425 555 421 642 L 419 675 Z",
+    "M 682 711 Q 685 735 713 783 Q 729 799 717 811 Q 702 830 664 847 Q 645 857 626 847 Q 616 840 624 827 Q 634 805 633 777 Q 629 743 621 701 L 612 658 Q 596 589 597 576 Q 598 560 616 574 Q 634 589 662 660 L 682 711 Z",
+    "M 248 489 Q 276 467 306 441 Q 319 429 334 431 Q 344 432 349 444 Q 353 459 343 487 Q 331 520 241 535 Q 226 538 220 535 Q 216 531 217 519 Q 221 509 248 489 Z",
+    "M 170 362 Q 209 316 240 302 Q 255 299 263 313 Q 269 325 266 341 Q 260 365 243 377 Q 180 411 157 400 Q 151 399 154 387 Q 155 375 170 362 Z",
+    "M 181 99 Q 169 96 170 80 Q 177 7 209 -14 Q 215 -21 225 -19 Q 232 -18 236 6 Q 243 45 339 250 Q 346 263 346 270 Q 346 280 337 274 Q 322 267 217 129 Q 205 113 181 99 Z",
+    "M 591 511 Q 616 486 645 457 Q 658 442 676 443 Q 686 443 693 457 Q 697 472 690 504 Q 680 537 587 561 Q 571 565 564 563 Q 558 559 560 546 Q 563 533 591 511 Z",
+    "M 511 329 Q 640 359 857 356 Q 914 353 923 364 Q 929 376 912 390 Q 861 429 822 420 Q 675 389 364 350 Q 343 349 359 331 Q 372 318 391 312 Q 407 308 465 320 L 511 329 Z",
+    "M 465 320 Q 514 220 471 112 Q 441 76 482 38 Q 494 28 510 41 Q 600 98 803 85 Q 819 85 839 82 Q 861 78 872 85 Q 879 91 874 103 Q 868 116 829 140 Q 811 150 733 142 Q 711 149 548 116 Q 538 112 536 116 Q 527 122 530 140 Q 537 251 547 283 Q 553 298 539 309 Q 527 321 511 329 C 486 345 453 347 465 320 Z",
+  ],
+};
+
+Chr1 = {
+  character: "茫",
+  definition: "vague, boundless; vast, widespread",
+  pinyin: ["máng"],
+  decomposition: "⿱艹汒",
+  radical: "艹",
+};
+
+zhuang = {
+  pos: "pron",
+  word: "mwngz",
+  sound: "/mɯŋ˧˩/",
+  meaning: ["you (singular)"],
+};
+
+rule = 3;
+d = "NA";    
+  }else if (item == "Water") {
+  
+  chr01= {
+  character: "氵",
+  strokes: [
+    "M 438 711 Q 478 680 523 641 Q 539 626 558 627 Q 571 628 576 644 Q 580 663 569 697 Q 562 724 519 743 Q 420 774 404 768 Q 398 762 400 747 Q 404 734 438 711 Z",
+    "M 326 514 Q 402 442 444 427 Q 460 426 470 440 Q 477 455 472 474 Q 453 525 338 557 Q 319 561 309 557 Q 302 556 306 542 Q 307 529 326 514 Z",
+    "M 362 145 Q 349 144 347 124 Q 350 39 384 13 Q 391 4 402 6 Q 411 6 416 33 Q 440 100 592 354 Q 602 370 602 377 Q 603 387 592 382 Q 579 376 424 197 Q 385 158 362 145 Z",
+  ],
+};
+
+Chr1 = {
+  character: "氵",
+  definition: "water",
+  pinyin: ["shuǐ"],
+  decomposition: "⿱？？",
+  radical: "氵",
+};
+
+zhuang = {
+  pos: "noun",
+  word: "raemx",
+  sound: "/ɣam˦˨/",
+  meaning: ["water"],
+};
+
+rule = 5;
+d = "NA";
+
+}else if (item == "I, me"){
+  chr01 = {
+  character: "咔",
+  strokes: [
+    "M 161 567 Q 149 574 116 582 Q 103 586 99 580 Q 92 574 100 557 Q 130 484 143 368 Q 144 334 164 309 Q 180 285 187 301 Q 196 322 192 361 L 188 397 Q 172 506 172 538 C 171 562 171 562 161 567 Z",
+    "M 325 421 Q 338 521 365 552 Q 387 580 362 593 Q 341 603 312 619 Q 294 628 249 601 Q 207 582 161 567 C 133 558 143 529 172 538 Q 211 550 255 563 Q 279 570 284 560 Q 294 553 287 514 Q 281 471 272 423 C 267 394 321 391 325 421 Z",
+    "M 192 361 Q 201 360 211 363 Q 251 375 342 387 Q 352 388 353 398 Q 353 405 325 421 L 272 423 Q 271 423 269 422 Q 224 406 188 397 C 159 390 162 362 192 361 Z",
+    "M 616 504 Q 622 568 626 629 L 628 660 Q 629 720 646 776 Q 649 786 629 801 Q 595 819 572 823 Q 556 827 548 818 Q 541 811 549 796 Q 568 771 568 753 Q 578 635 576 497 C 576 467 613 474 616 504 Z",
+    "M 626 629 Q 656 622 721 636 Q 755 645 792 655 Q 811 659 813 663 Q 822 672 816 680 Q 809 692 778 696 Q 756 699 676 671 Q 652 665 628 660 C 599 654 597 634 626 629 Z",
+    "M 601 458 Q 613 467 724 474 Q 787 480 866 482 Q 926 482 933 493 Q 939 506 920 521 Q 863 560 822 549 Q 749 530 622 506 Q 619 506 616 504 L 576 497 Q 480 482 377 464 Q 355 461 371 443 Q 408 413 447 425 Q 502 441 563 452 L 601 458 Z",
+    "M 563 452 Q 590 412 564 134 Q 563 124 561 113 Q 560 88 556 75 Q 544 42 580 -15 Q 592 -34 600 -39 Q 612 -40 617 -26 Q 630 5 626 37 Q 620 332 631 419 Q 634 432 627 438 Q 614 450 601 458 C 576 475 551 480 563 452 Z",
+    "M 677 331 Q 726 288 787 224 Q 803 205 818 202 Q 825 201 833 211 Q 843 224 831 265 Q 822 304 750 333 Q 704 352 677 360 Q 668 364 667 353 Q 667 340 677 331 Z",
+  ],
+};
+
+Chr1 = {
+  character: "咔",
+  definition: "used in transliterations",
+  pinyin: ["kā"],
+  decomposition: "⿰口卡",
+  radical: "口",
+};
+
+zhuang = {
+  pos: "pron",
+  word: "gou",
+  sound: "/kou˨˦/",
+  meaning: ["I; me"],
+};
+
+rule = 3;
+d = "NA";
+  
+}else if (item =="Sawndip"){
+  chr01 = {
+  character: "書",
+  strokes: [
+    "M 657 521 Q 672 572 685 601 L 710 646 Q 722 664 736 674 Q 755 692 740 711 Q 724 726 671 754 Q 652 763 630 755 Q 576 737 527 726 L 468 715 Q 395 705 317 701 Q 301 700 302 691 Q 303 682 322 675 Q 347 663 382 673 Q 425 680 469 686 L 523 694 Q 560 701 600 706 Q 628 712 638 700 Q 648 688 638 635 L 628 599 Q 618 566 608 536 C 599 507 648 492 657 521 Z",
+    "M 685 601 Q 710 601 929 602 Q 950 602 955 611 Q 961 623 943 637 Q 886 682 817 664 Q 768 657 710 646 L 638 635 Q 583 629 520 620 L 471 614 Q 296 595 97 575 Q 75 574 91 555 Q 106 540 124 534 Q 146 528 163 533 Q 293 567 442 583 Q 455 586 472 586 L 519 591 Q 568 597 628 599 L 685 601 Z",
+    "M 516 482 Q 579 489 659 494 Q 669 495 671 504 Q 671 510 657 521 C 635 540 635 540 608 536 Q 605 536 517 519 L 472 511 Q 384 498 311 491 Q 292 490 303 471 Q 310 462 319 459 Q 329 455 343 458 Q 392 468 472 477 L 516 482 Z",
+    "M 512 379 Q 582 389 644 395 Q 669 398 661 412 Q 651 428 624 434 Q 594 440 513 421 L 470 412 Q 403 400 345 390 Q 327 386 347 370 Q 362 358 392 363 Q 431 369 468 373 L 512 379 Z",
+    "M 510 319 Q 511 350 512 379 L 513 421 Q 514 452 516 482 L 517 519 Q 517 556 519 591 L 520 620 Q 520 650 522 678 Q 522 687 523 694 L 527 726 Q 528 745 541 793 Q 545 805 523 820 Q 486 839 461 843 Q 445 846 436 837 Q 429 830 437 813 Q 467 770 467 740 Q 467 728 468 715 L 469 686 Q 470 652 471 614 L 472 586 Q 472 550 472 511 L 472 477 Q 471 446 470 412 L 468 373 Q 467 345 466 313 C 465 283 509 289 510 319 Z",
+    "M 466 313 Q 330 297 172 277 Q 153 276 167 259 Q 180 246 198 240 Q 217 236 234 239 Q 438 297 823 297 Q 842 297 847 306 Q 851 316 836 330 Q 787 369 750 360 Q 659 342 510 319 L 466 313 Z",
+    "M 353 197 Q 340 203 307 209 Q 294 212 291 206 Q 284 200 293 183 Q 326 116 344 7 Q 348 -26 367 -48 Q 386 -70 391 -54 Q 395 -42 395 -26 L 392 6 Q 392 9 380 73 L 376 98 Q 367 147 365 166 C 362 194 362 194 353 197 Z",
+    "M 607 -11 Q 608 -12 610 -14 Q 631 -47 649 -55 Q 659 -62 675 -41 Q 690 -16 718 118 Q 728 149 751 175 Q 764 188 753 202 Q 737 220 694 246 Q 678 255 608 239 Q 563 236 353 197 C 324 192 336 159 365 166 Q 453 188 607 206 Q 638 209 653 198 Q 666 188 664 168 Q 640 27 627 12 C 615 -15 601 -3 607 -11 Z",
+    "M 380 73 Q 387 72 400 73 Q 509 89 590 98 Q 612 99 605 113 Q 595 126 571 132 Q 547 136 376 98 C 347 92 350 75 380 73 Z",
+    "M 395 -26 Q 405 -29 419 -27 Q 480 -15 607 -11 C 637 -10 649 -8 627 12 Q 620 19 606 29 Q 590 39 559 32 Q 466 13 392 6 C 362 3 366 -20 395 -26 Z",
+  ],
+};
+
+ chr02 = {
+  character: "典",
+  strokes: [
+    "M 290 573 Q 266 586 241 590 Q 225 593 218 585 Q 211 578 220 563 Q 247 527 262 487 Q 275 447 314 281 C 321 252 362 256 356 285 Q 320 459 314 531 C 311 561 311 562 290 573 Z",
+    "M 722 325 Q 762 491 802 553 Q 814 565 809 577 Q 802 595 740 625 Q 722 634 708 629 Q 662 622 614 612 L 565 604 Q 510 598 454 589 L 409 585 Q 351 579 290 573 C 260 570 284 527 314 531 Q 327 530 339 535 Q 373 542 412 548 L 455 555 Q 507 565 563 572 L 611 578 Q 675 596 704 578 Q 714 571 712 547 Q 699 453 665 318 C 658 289 715 296 722 325 Z",
+    "M 596 431 Q 623 435 650 438 Q 672 439 665 453 Q 655 466 632 472 Q 619 475 600 472 L 556 465 Q 505 455 460 445 L 419 438 Q 388 434 360 428 Q 344 425 362 410 Q 375 400 405 404 Q 412 405 421 406 L 462 412 Q 508 419 552 425 L 596 431 Z",
+    "M 454 589 Q 454 671 457 695 Q 461 720 445 733 Q 420 752 391 761 Q 375 767 366 760 Q 357 753 365 737 Q 401 662 409 585 L 412 548 Q 415 505 419 438 L 421 406 Q 424 355 427 292 C 428 262 472 266 470 296 Q 466 359 462 412 L 460 445 Q 456 506 455 555 L 454 589 Z",
+    "M 614 612 Q 617 661 644 760 Q 648 770 629 787 Q 595 808 570 813 Q 554 817 546 809 Q 537 802 545 787 Q 570 744 569 716 Q 568 662 565 604 L 563 572 Q 559 520 556 465 L 552 425 Q 545 367 539 303 C 536 273 579 278 582 308 Q 589 372 596 431 L 600 472 Q 604 527 611 578 L 614 612 Z",
+    "M 314 281 Q 223 275 128 266 Q 103 265 120 243 Q 156 207 201 217 Q 501 286 912 264 Q 913 265 916 264 Q 940 263 946 273 Q 953 286 934 304 Q 870 353 803 339 Q 766 335 722 325 L 665 318 Q 625 314 582 308 L 539 303 Q 526 303 514 301 Q 492 300 470 296 L 427 292 Q 391 291 356 285 L 314 281 Z",
+    "M 359 195 Q 349 131 186 -2 Q 161 -18 192 -16 Q 267 -10 387 105 Q 388 108 439 154 Q 452 167 449 178 Q 446 193 417 202 Q 386 215 372 211 Q 363 210 359 195 Z",
+    "M 610 173 Q 680 109 764 14 Q 782 -10 799 -15 Q 809 -16 817 -5 Q 832 10 818 59 Q 808 126 612 208 Q 602 215 600 200 Q 599 185 610 173 Z",
+  ],
+};
+
+Chr1 = {
+  character: "書",
+  definition: "book, letter, document; writing",
+  pinyin: ["shū"],
+  decomposition: "⿱聿曰",
+  radical: "曰",
+};
+
+ Chr2 = {
+  character: "典",
+  definition: "law; scripture; documentation",
+  pinyin: ["diǎn"],
+  decomposition: "⿱曲八",
+  radical: "八",
+};
+
+ zhuang = {
+  pos: "name",
+  word: "Sawndip",
+  sound: "/θaɯ˨˦ ɗip˥/",
+  meaning: [
+    "Sawndip writing scripts",
+  ],
+};
+
+rule = 2;
+d = "⿱";
+}else if (item =="Mountain"){
+  chr01 = {
+  character: "山",
+  strokes: [
+    "M 536 209 Q 546 407 552 587 Q 556 633 562 664 Q 569 691 574 710 Q 578 723 554 740 Q 512 762 484 767 Q 465 771 456 760 Q 447 751 457 734 Q 488 688 489 655 Q 499 444 488 200 C 487 170 534 179 536 209 Z",
+    "M 796 244 Q 657 232 536 209 L 488 200 Q 379 182 284 155 Q 256 148 263 180 Q 267 253 272 329 Q 275 357 263 373 Q 220 416 190 409 Q 178 403 188 382 Q 224 309 215 236 Q 211 166 182 133 Q 161 112 170 96 Q 183 78 203 66 Q 219 57 230 67 Q 243 83 283 99 Q 440 151 606 182 Q 757 210 789 197 C 819 193 826 247 796 244 Z",
+    "M 789 197 Q 783 166 774 145 Q 756 118 785 55 Q 795 36 809 49 Q 837 73 846 173 Q 868 386 890 427 Q 900 443 889 460 Q 867 479 831 501 Q 816 510 802 503 Q 793 499 796 484 Q 823 435 796 244 L 789 197 Z",
+  ],
+};
+
+ chr02 = {
+  character: "丘",
+  strokes: [
+    "M 360 527 Q 490 596 563 656 Q 611 690 654 711 Q 675 717 676 727 Q 677 740 660 751 Q 630 763 574 771 Q 553 775 538 770 Q 531 763 533 750 Q 542 705 343 542 C 320 523 334 513 360 527 Z",
+    "M 366 424 Q 360 526 360 527 C 360 531 360 531 343 542 Q 318 560 289 567 Q 273 571 262 564 Q 253 557 262 539 Q 293 487 309 429 Q 321 371 347 143 C 350 113 398 117 394 147 Q 367 369 368 388 L 366 424 Z",
+    "M 636 427 Q 724 442 811 452 Q 826 453 826 461 Q 827 474 803 491 Q 770 515 736 503 Q 646 473 496 445 Q 430 436 366 424 C 336 419 338 390 368 388 Q 378 387 398 387 Q 513 408 588 420 L 636 427 Z",
+    "M 622 168 Q 649 322 667 360 Q 676 384 664 400 Q 651 416 636 427 C 612 446 581 449 588 420 Q 598 383 598 346 Q 597 307 576 163 C 572 133 617 138 622 168 Z",
+    "M 347 143 Q 232 136 108 125 Q 83 124 100 103 Q 136 67 181 75 Q 464 138 924 116 Q 948 115 954 125 Q 961 138 942 156 Q 881 204 838 196 Q 751 183 622 168 L 576 163 Q 543 162 509 157 Q 454 153 394 147 L 347 143 Z",
+  ],
+};
+
+Chr1 = {
+  character: "山",
+  definition: "mountain, hill, peak",
+  pinyin: ["shān"],
+  decomposition: "⿶凵丨",
+  radical: "山",
+};
+
+Chr2 = {
+  character: "丘",
+  definition: "mound, hill; surname",
+  pinyin: ["qiū"],
+  decomposition: "⿱斤一",
+  radical: "一",
+};
+
+zhuang = {
+  pos: "noun",
+  word: "bya",
+  sound: "/pʲa˨˦/",
+  meaning: ["hill or mountain"],
+};
+
+rule = 1;
+d = "⿱";
+}else if (item =="Heaven"){
+  chr01 = {
+  character: "天",
+  strokes: [
+    "M 499 681 Q 581 697 671 713 Q 726 725 734 732 Q 744 741 739 750 Q 732 763 699 773 Q 666 780 562 747 Q 439 719 336 709 Q 294 703 324 684 Q 369 659 430 668 L 499 681 Z",
+    "M 509 439 Q 615 454 771 455 Q 843 455 848 465 Q 854 478 836 493 Q 781 532 739 524 Q 652 505 506 478 L 447 470 Q 323 452 181 432 Q 159 429 175 411 Q 208 381 250 391 Q 340 416 442 430 L 509 439 Z",
+    "M 506 478 Q 512 583 534 637 Q 540 650 530 658 Q 518 670 499 681 C 474 698 413 693 430 668 Q 455 637 455 606 Q 454 531 447 470 L 442 430 Q 412 253 320 176 Q 232 113 145 75 Q 130 71 127 66 Q 121 60 138 57 Q 214 51 362 143 Q 390 167 413 194 Q 470 267 494 405 L 506 478 Z",
+    "M 494 405 Q 629 144 722 51 Q 740 33 762 31 Q 847 30 920 27 Q 951 26 952 33 Q 953 42 920 59 Q 752 134 710 180 Q 601 294 515 430 Q 511 434 509 439 C 493 464 473 446 494 405 Z",
+  ],
+};
+
+chr02 = {
+  character: "滂",
+  strokes: [
+    "M 215 687 Q 242 665 269 636 Q 284 623 300 622 Q 310 623 317 637 Q 321 652 313 683 Q 307 704 276 718 Q 203 746 188 739 Q 182 735 184 722 Q 188 710 215 687 Z",
+    "M 129 499 Q 171 445 202 428 Q 217 424 227 437 Q 234 450 232 467 Q 228 492 210 506 Q 185 525 144 537 Q 128 544 118 540 Q 111 539 113 526 Q 114 514 129 499 Z",
+    "M 130 142 Q 118 138 121 121 Q 137 46 172 29 Q 179 22 189 25 Q 196 26 197 52 Q 200 91 282 324 Q 288 340 287 346 Q 286 356 277 349 Q 267 342 256 325 Q 208 247 165 179 Q 155 161 130 142 Z",
+    "M 552 806 Q 571 790 594 769 Q 607 757 622 758 Q 632 759 637 772 Q 641 787 631 815 Q 621 839 545 851 Q 529 854 524 851 Q 520 847 521 835 Q 525 825 552 806 Z",
+    "M 712 697 Q 724 701 737 702 Q 786 712 794 718 Q 801 725 798 733 Q 792 743 766 752 Q 744 758 633 728 Q 528 707 446 701 Q 412 697 435 681 Q 468 660 540 670 Q 592 679 649 687 L 712 697 Z",
+    "M 472 614 Q 506 551 530 548 Q 542 545 550 561 Q 553 573 547 592 Q 535 617 480 638 Q 471 641 469 630 Q 468 623 472 614 Z",
+    "M 629 531 Q 690 625 724 664 Q 737 674 731 683 Q 724 690 712 697 C 686 713 641 716 649 687 Q 653 677 652 659 Q 640 610 607 528 Q 606 528 606 527 C 593 500 613 506 629 531 Z",
+    "M 403 497 Q 394 518 379 529 Q 375 533 369 530 Q 363 527 362 516 Q 363 482 330 420 Q 318 404 319 385 Q 320 366 329 350 Q 336 337 342 345 Q 354 348 374 394 Q 393 440 403 455 Q 406 459 408 464 C 413 475 413 475 403 497 Z",
+    "M 408 464 Q 426 458 472 468 Q 571 499 761 521 Q 797 525 809 523 Q 822 519 822 514 Q 822 510 776 441 Q 767 429 773 424 Q 780 420 796 429 Q 856 460 902 467 Q 941 474 941 483 Q 940 493 875 549 Q 853 568 790 556 Q 717 547 629 531 L 606 527 Q 554 521 494 510 Q 448 503 403 497 C 373 493 378 467 408 464 Z",
+    "M 547 436 Q 577 400 601 389 Q 613 386 620 397 Q 624 407 623 420 Q 619 438 604 448 Q 588 458 557 465 Q 544 469 537 466 Q 533 465 534 456 Q 535 447 547 436 Z",
+    "M 604 325 Q 676 335 810 336 Q 828 337 832 345 Q 836 355 821 367 Q 766 406 707 384 Q 656 375 583 360 Q 495 345 391 328 Q 372 327 386 311 Q 399 299 415 295 Q 434 291 448 295 Q 494 308 547 317 L 604 325 Z",
+    "M 593 254 Q 608 245 655 235 Q 682 229 690 214 Q 702 187 657 96 Q 636 60 620 55 Q 610 51 570 68 Q 536 87 530 82 Q 524 73 540 60 Q 576 21 583 -15 Q 587 -33 597 -39 Q 610 -46 645 -27 Q 696 9 731 117 Q 746 169 765 184 Q 777 188 779 197 Q 780 207 759 233 Q 722 272 692 266 Q 676 266 611 282 C 582 289 566 266 593 254 Z",
+    "M 611 282 Q 623 300 621 307 Q 617 314 604 325 C 582 345 550 347 547 317 Q 535 169 305 21 Q 298 14 303 11 Q 331 1 428 60 Q 524 117 593 254 L 611 282 Z",
+  ],
+};
+
+Chr1 = {
+  character: "天",
+  definition: "sky, heaven; god, celestial",
+  pinyin: ["tiān"],
+  decomposition: "⿱一大",
+  radical: "大",
+};
+
+Chr2 = {
+  character: "滂",
+  definition: "torrential; voluminous",
+  pinyin: ["pāng"],
+  decomposition: "⿰氵旁",
+  radical: "氵",
+};
+
+zhuang = {
+  pos: "noun",
+  word: "mbwn",
+  sound: "/ɓɯn˨˦/",
+  meaning: [
+    "sky",
+    "God",
+    "heaven",
+  ],
+};
+
+ rule = 2;
+d = "⿱";
+}else if (item =="Han Chinese"){
+ chr01 = {
+  character: "布",
+  strokes: [
+    "M 465 625 Q 585 649 877 650 Q 901 650 908 660 Q 914 673 895 688 Q 829 736 767 715 Q 671 696 520 671 Q 501 670 481 665 L 412 656 Q 303 643 182 625 Q 158 622 176 603 Q 192 588 212 582 Q 234 576 253 582 Q 320 601 396 614 L 465 625 Z",
+    "M 369 445 Q 429 544 465 625 L 481 665 Q 511 740 525 761 Q 538 774 534 789 Q 522 813 494 836 Q 478 852 463 852 Q 448 848 451 831 Q 460 810 447 752 Q 440 733 432 709 Q 422 682 412 656 L 396 614 Q 320 452 240 360 Q 170 287 119 242 Q 112 236 108 230 Q 102 220 114 219 Q 147 216 257 310 Q 281 332 305 359 Q 323 381 341 406 L 369 445 Z",
+    "M 388 436 Q 381 442 369 445 C 340 454 334 435 341 406 Q 362 327 332 243 Q 314 201 348 164 Q 355 151 364 157 Q 392 178 393 285 Q 393 373 397 400 C 400 428 400 428 388 436 Z",
+    "M 582 430 Q 640 440 697 444 Q 728 445 730 425 Q 739 266 717 245 Q 711 244 653 263 Q 637 270 633 265 Q 629 259 639 247 Q 691 196 721 158 Q 737 142 752 157 Q 791 199 789 254 Q 786 383 797 431 Q 801 453 791 462 Q 763 489 743 500 Q 730 507 719 497 Q 712 487 595 463 Q 589 463 583 461 L 524 452 Q 472 446 388 436 C 358 432 367 399 397 400 Q 407 399 421 401 Q 472 413 524 421 L 582 430 Z",
+    "M 525 -32 Q 529 -59 537 -69 Q 543 -76 551 -74 Q 566 -65 574 -2 Q 581 71 581 146 Q 578 207 582 430 L 583 461 Q 583 479 594 532 Q 598 551 583 560 Q 549 582 532 586 Q 519 590 502 582 Q 493 573 501 562 Q 522 517 524 452 L 524 421 Q 525 306 521 144 Q 520 12 525 -32 Z",
+  ],
+};
+
+chr02 = {
+  character: "會",
+  strokes: [
+    "M 529 786 Q 533 792 538 794 Q 547 798 546 810 Q 545 820 534 835 Q 521 851 501 859 Q 480 869 468 868 Q 459 867 460 854 Q 461 832 451 802 Q 417 733 373 682 Q 324 621 270 577 Q 216 531 87 444 Q 77 440 88 436 Q 100 436 130 449 Q 182 467 230 495 Q 237 501 248 506 L 271 522 Q 311 553 358 594 Q 418 652 513 768 L 529 786 Z",
+    "M 513 768 Q 631 651 760 547 Q 784 525 821 526 Q 890 526 959 544 Q 978 547 979 552 Q 980 559 966 564 Q 909 583 844 601 Q 771 625 715 657 Q 645 694 578 747 Q 550 771 529 786 C 505 804 492 789 513 768 Z",
+    "M 404 618 Q 370 612 395 597 Q 408 590 429 585 Q 456 581 484 588 Q 529 597 575 606 Q 596 610 599 614 Q 606 621 603 629 Q 596 639 570 646 Q 542 652 515 640 Q 491 633 465 627 Q 437 621 404 618 Z",
+    "M 248 506 Q 249 503 252 499 Q 280 445 299 356 Q 303 328 320 311 Q 338 289 343 306 Q 346 315 346 326 L 345 346 Q 344 355 342 364 Q 326 451 321 482 C 316 512 316 512 306 515 Q 294 519 271 522 C 241 526 236 527 248 506 Z",
+    "M 627 347 Q 642 325 656 317 Q 666 308 683 330 Q 695 346 725 437 Q 735 468 760 492 Q 773 504 763 519 Q 748 537 706 565 Q 685 575 670 570 Q 634 561 580 555 Q 513 546 429 533 Q 360 521 306 515 C 276 511 292 476 321 482 Q 325 482 330 483 Q 385 498 467 510 L 503 515 Q 552 524 612 529 Q 649 533 664 520 Q 674 513 671 498 Q 653 407 645 394 Q 641 381 625 379 C 609 370 609 370 627 347 Z",
+    "M 467 510 Q 468 509 470 506 Q 473 499 473 486 Q 473 473 474 364 C 474 334 510 340 512 370 Q 516 422 520 465 Q 521 472 521 477 Q 528 490 520 499 Q 511 509 503 515 C 480 534 450 535 467 510 Z",
+    "M 373 441 Q 385 423 397 406 Q 410 393 424 391 Q 434 390 441 404 Q 442 414 436 432 Q 429 442 414 449 Q 389 461 378 463 Q 371 464 369 455 Q 368 448 373 441 Z",
+    "M 574 477 Q 564 458 543 429 Q 539 425 543 420 Q 547 419 553 422 Q 599 453 623 464 Q 635 468 632 475 Q 628 485 614 497 Q 601 509 586 510 Q 576 509 577 497 Q 578 487 574 477 Z",
+    "M 346 326 Q 359 319 385 322 Q 523 340 627 347 C 657 349 654 372 625 379 Q 625 380 624 380 Q 605 384 569 379 Q 541 375 512 370 L 474 364 Q 405 355 345 346 C 315 342 318 336 346 326 Z",
+    "M 379 243 Q 363 256 343 261 Q 334 262 329 255 Q 326 249 333 240 Q 337 230 340 218 Q 343 209 343 193 Q 346 139 344 108 Q 343 78 334 49 Q 327 25 332 8 Q 339 -22 350 -33 Q 360 -45 369 -32 Q 378 -22 383 2 L 389 35 Q 390 45 391 56 Q 391 84 392 114 L 393 144 Q 394 196 398 212 C 401 227 401 227 379 243 Z",
+    "M 673 46 Q 669 89 662 169 Q 661 200 678 221 Q 688 234 679 244 Q 660 263 609 289 Q 591 298 576 289 Q 533 270 467 257 Q 409 247 379 243 C 349 239 368 209 398 212 Q 414 213 439 218 Q 505 228 561 239 Q 583 243 594 234 Q 600 230 603 187 Q 606 147 604 95 Q 604 61 601 50 Q 597 31 578 40 C 548 40 540 40 556 18 Q 584 -19 605 -55 Q 614 -73 624 -73 Q 640 -72 657 -39 Q 676 -2 673 46 Z",
+    "M 533 130 Q 558 134 549 148 Q 539 164 511 168 Q 486 172 443 161 Q 415 152 393 144 C 365 134 362 114 392 114 Q 395 114 399 114 Q 477 124 533 130 Z",
+    "M 383 2 Q 390 2 396 3 Q 448 13 556 18 C 586 19 603 24 578 40 Q 577 41 573 43 Q 563 52 556 56 Q 541 65 512 58 Q 445 43 389 35 C 359 31 353 1 383 2 Z",
+  ],
+};
+
+Chr1 = {
+  character: "布",
+  definition: "cotton, linen, textiles; to announce, to declare; to spread",
+  pinyin: ["bù"],
+  decomposition: "⿸？巾",
+  radical: "巾",
+};
+
+ Chr2 = {
+  character: "會",
+  definition: "to assemble, to meet; meeting; association, group",
+  pinyin: ["huì"],
+  decomposition: "⿱⿱亼？日",
+  radical: "曰",
+};
+
+ zhuang = {
+  pos: "name",
+  word: "Bouxhek",
+  sound: "/pou˦˨ heːk˧˥/",
+  meaning: ["ethnic Chinese"],
+};
+
+ rule = 6;
+d ="⿰"
+}else if(item =="Zhuang people"){
+  chr01 = {
+  character: "亻",
+  strokes: [
+    "M 532 697 Q 460 531 279 320 Q 269 310 266 303 Q 262 291 277 294 Q 316 298 426 437 Q 436 450 449 465 L 472 494 Q 515 552 562 626 Q 592 678 618 705 Q 628 715 623 730 Q 619 743 589 768 Q 561 787 542 787 Q 523 786 531 762 Q 546 726 532 697 Z",
+    "M 449 465 Q 473 399 475 391 Q 474 390 475 387 Q 481 239 453 119 Q 438 70 475 22 Q 476 19 480 16 Q 499 0 511 28 Q 526 70 526 118 Q 523 349 530 401 Q 537 429 527 440 Q 509 462 495 476 Q 485 486 472 494 C 447 511 439 493 449 465 Z",
+  ],
+};
+
+chr02 = {
+  character: "查",
+  strokes: [
+    "M 534 624 Q 573 634 745 650 Q 757 647 767 662 Q 768 675 744 688 Q 699 715 638 694 Q 586 684 534 671 L 484 662 Q 421 653 363 647 Q 308 643 246 636 Q 213 633 238 613 Q 275 583 304 588 Q 364 600 437 610 L 534 624 Z",
+    "M 534 671 Q 537 749 559 786 Q 566 796 553 810 Q 493 855 466 844 Q 451 840 458 824 Q 483 784 483 720 Q 483 690 484 662 L 483 578 Q 482 503 475 471 Q 474 455 480 438 Q 487 428 492 415 Q 502 399 518 408 Q 528 417 530 492 Q 526 537 528 592 L 534 671 Z",
+    "M 437 610 Q 431 592 413 569 Q 359 499 299 451 Q 250 408 147 348 Q 128 336 145 333 Q 175 327 277 379 Q 349 428 402 478 Q 441 527 483 578 C 517 620 463 670 437 610 Z",
+    "M 528 592 Q 721 384 770 371 Q 842 362 940 382 Q 959 385 961 390 Q 962 397 947 402 Q 895 421 833 440 Q 689 488 552 610 Q 542 619 534 624 C 510 642 498 624 528 592 Z",
+    "M 350 338 Q 334 347 317 350 Q 310 353 306 347 Q 299 341 308 331 Q 338 286 349 184 Q 353 124 388 100 Q 389 100 391 99 Q 407 95 407 123 L 406 149 Q 405 168 397 190 Q 396 203 393 221 L 390 242 Q 386 275 386 301 Q 386 305 385 307 Q 385 308 386 309 C 386 320 377 324 350 338 Z",
+    "M 581 135 Q 594 116 609 109 Q 619 102 634 123 Q 647 145 673 271 Q 682 302 704 327 Q 717 339 705 353 Q 689 369 647 394 Q 632 401 555 382 Q 548 382 443 358 Q 392 346 350 338 C 321 332 357 301 386 309 Q 455 330 575 350 Q 602 354 611 346 Q 623 333 621 318 Q 600 177 580 167 C 568 151 568 151 581 135 Z",
+    "M 393 221 Q 397 218 558 238 Q 583 242 573 256 Q 563 271 535 276 Q 511 279 390 242 C 361 233 363 223 393 221 Z",
+    "M 407 123 Q 411 123 419 123 Q 510 132 581 135 C 611 136 608 158 580 167 Q 577 168 574 169 Q 553 173 516 168 Q 458 158 406 149 C 376 144 377 123 407 123 Z",
+    "M 183 32 Q 159 31 176 11 Q 191 -5 210 -12 Q 234 -19 252 -15 Q 483 34 849 12 Q 871 11 877 20 Q 884 33 866 49 Q 809 98 742 84 Q 565 60 183 32 Z",
+  ],
+};
+
+Chr1 = {
+  character: "亻",
+  definition: "man, person; people",
+  pinyin: ["rén"],
+  decomposition: "？",
+  radical: "亻",
+};
+
+Chr2 = {
+  character: "查",
+  definition: "to investigate, to examine, to look into",
+  pinyin: ["chá"],
+  decomposition: "⿱木旦",
+  radical: "木",
+};
+
+zhuang = {
+  pos: "name",
+  word: "Bouxcuengh",
+  sound: "/pou˦˨ ɕuːŋ˧/",
+  meaning: ["the Zhuang people"],
+};
+
+rule = 2;
+d ="⿰"
+}
+  
+  displayInfo();
+  displayCharacter();
+
+  scale(0.8);
+ 
+
+}
+
+function displayInfo() {
+  scale(0.8);
+  stroke(20);
+  strokeWeight(1);
+  fill(60, 60, 70);
+  rect(width / 8, height / 5 - 40, 250, 40); //1
+  rect(width / 8, height / 5 + 230, 250, 40); //3
+
+  fill(100);
+  textSize(20);
+  text("Generative Sawndip", width / 8 + 5, height / 5 - 15);
+  text("Chinese Character", width / 8 + 5, height / 5 + 255);
+  rect(width / 8, height / 5, 250, 170); //2
+  rect(width / 8, height / 5 + 270, 250, 100); //4
+
+  noStroke();
+  textSize(13);
+  fill(20);
+  text("Word: " + zhuang.word, width / 8 + 5, height / 5 + 20);
+  text(
+    "Definition: " + zhuang.meaning,
+    width / 8 + 5,
+    height / 5 + 40
+  );
+  text("Part-of-speech: " + zhuang.pos, width / 8 + 5, height / 5 + 60);
+  text("Pronunciation: " + zhuang.sound, width / 8 + 5, height / 5 + 80);
+  text("Decomposition: " + d, width / 8 + 5, height / 5 + 100);
+  if (rule == 1) {
+    text("Rule: Semantic compound", width / 8 + 5, height / 5 + 120);
+  } else if (rule == 2) {
+    text("Rule: Phono-semantic compound", width / 8 + 5, height / 5 + 120);
+  } else if (rule == 3) {
+    text(
+      "Rule: Borrowed solely for pronunciations",
+      width / 8 + 5,
+      height / 5 + 120
+    );
+  } else if (rule == 4) {
+    text(
+      "Rule: Borrowed solely for meanings",
+      width / 8 + 5,
+      height / 5 + 120
+    );
+  } else if (rule == 5) {
+    text("Rule: Indicative ideogram", width / 8 + 5, height / 5 + 120);
+  } else if (rule == 6) {
+    text("Rule: Spell out the pronunciation", width / 8 + 5, height / 5 + 120);
+  }
+}
+
+function displayCharacter() {
+  if(item == "I, me"||item == "You"|item == "Water"||item == "Earth"||item == "Zhuang language"){
+  push();
+  scale(0.8);
+  translate(200, 100);
+  fill(100);
+  stroke(20);
+  rect(width / 2, height / 2 - 150, 300, 300);
+  stroke(20, 30);
+  line(width / 2, height / 2, width / 2 + 300, height / 2);
+  line(width / 2 + 150, height / 2 - 150, width / 2 + 150, height / 2 + 150);
+
+  translate(width / 2, height / 2 + 120);
+
+  push();
+  scale(0.2, -0.3);
+  translate(280, 0);
+  let ctx01 = drawingContext;
+  ctx01.fillStyle = c1;
+  ctx01.strokeStyle = c1;
+  for (let j = 0; j < chr01.strokes.length; j++) {
+    p = new Path2D(chr01.strokes[j]);
+    ctx01.fill(p);
+  }
+  pop();
+  pop();
+  
+  push();
+  fill(100);
+  stroke(20);
+  if (
+    mouseX > width / 2 &&
+    mouseX < width / 2 + 300 &&
+    mouseY > height / 2 - 150 &&
+    mouseY < height / 2 + 150
+  ) {
+    rect(width / 8, height / 5 + 270, 250, 100);
+    c1 = "red";
+    noStroke();
+    textSize(13);
+    fill(20);
+    text("Character: " + Chr1.character, width / 8 + 5, height / 5 + 290);
+    text(
+      "Definition: " + Chr1.definition,
+      width / 8 + 5,
+      height / 5 + 300,
+      245,
+      20
+    );
+    text("Pinyin: " + Chr1.pinyin, width / 8 + 5, height / 5 + 332);
+  } else {
+    c1 = "black";
+    rect(width / 8, height / 5 + 270, 250, 100);
+  }
+    pop();
+  }else if (item == "Sawndip"|| item =="Mountain"||item =="Heaven"){
+    push();
+    scale(0.8);
+  translate(200, 100);
+  fill(100);
+  stroke(20);
+  rect(width / 2, height / 2 - 150, 300, 300);
+  stroke(20, 30);
+  line(width / 2, height / 2, width / 2 + 300, height / 2);
+  line(width / 2 + 150, height / 2 - 150, width / 2 + 150, height / 2 + 150);
+
+  translate(width / 2, height / 2 + 120);
+
+  push();
+  translate(0, -105);
+  scale(0.3, -0.2);
+  let ctx01 = drawingContext;
+  ctx01.fillStyle = c1;
+  ctx01.strokeStyle = c1;
+  for (let j = 0; j < chr01.strokes.length; j++) {
+    p = new Path2D(chr01.strokes[j]);
+    ctx01.fill(p);
+  }
+  translate(0, -680);
+  let ctx02 = drawingContext;
+  ctx02.fillStyle = c2;
+  ctx02.strokeStyle = c2;
+  for (let j = 0; j < chr02.strokes.length; j++) {
+    p = new Path2D(chr02.strokes[j]);
+    ctx02.fill(p);
+  }
+  pop();
+  pop();
+    
+  push();
+  fill(100);
+  stroke(20);
+  if (
+    mouseX > width / 2 &&
+    mouseX < width / 2 + 300 &&
+    mouseY > height / 2 - 150 &&
+    mouseY < height / 2
+  ) {
+    rect(width / 8, height / 5 + 270, 250, 100);
+    c1 = "red";
+    c2 = "black";
+    noStroke();
+    textSize(13);
+    fill(20);
+    text("Character: " + Chr1.character, width / 8 + 5, height / 5 + 290);
+    text(
+      "Definition: " + Chr1.definition,
+      width / 8 + 5,
+      height / 5 + 300,
+      245,
+      20
+    );
+    text("Pinyin: " + Chr1.pinyin, width / 8 + 5, height / 5 + 333);
+  } else if (
+    mouseX > width / 2 &&
+    mouseX < width / 2 + 300 &&
+    mouseY > height / 2 &&
+    mouseY < height / 2 + 150
+  ) {
+    rect(width / 8, height / 5 + 270, 250, 100);
+    c2 = "red";
+    c1 = "black";
+    noStroke();
+    textSize(13);
+    fill(20);
+    text("Character: " + Chr2.character, width / 8 + 5, height / 5 + 290);
+    text(
+      "Definition: " + Chr2.definition,
+      width / 8 + 5,
+      height / 5 + 300,
+      245,
+      30
+    );
+    text("Pinyin: " + Chr2.pinyin, width / 8 + 5, height / 5 + 333);
+  } else {
+    c1 = "black";
+    c2 = "black";
+    rect(width / 8, height / 5 + 270, 250, 100);
+  }
+  pop();
+  
+  }else if (item =="Han Chinese"||item =="Zhuang people"){
+    push();
+    scale(0.8);
+  translate(200, 100);
+  fill(100);
+  stroke(20);
+  rect(width / 2, height / 2 - 150, 300, 300);
+  stroke(20, 30);
+  line(width / 2, height / 2, width / 2 + 300, height / 2);
+  line(width / 2 + 150, height / 2 - 150, width / 2 + 150, height / 2 + 150);
+
+  translate(width / 2, height / 2 + 120);
+
+  push();
+  translate(100, 0);
+  scale(0.2, -0.3);
+  let ctx02 = drawingContext;
+  ctx02.fillStyle = c2;
+  ctx02.strokeStyle = c2;
+  for (let j = 0; j < chr02.strokes.length; j++) {
+    p = new Path2D(chr02.strokes[j]);
+    ctx02.fill(p);
+  }
+
+  translate(-450, 0);
+  scale(0.7, 1);
+  let ctx01 = drawingContext;
+  ctx01.fillStyle = c1;
+  ctx01.strokeStyle = c1;
+  for (let j = 0; j < chr01.strokes.length; j++) {
+    p = new Path2D(chr01.strokes[j]);
+    ctx01.fill(p);
+  }
+  pop();
+    pop();
+    
+    push();
+    fill(100);
+  stroke(20);
+  if (
+    mouseX > width / 2 &&
+    mouseX < width / 2 + 150 &&
+    mouseY > height / 2 - 150 &&
+    mouseY < height / 2 + 150
+  ) {
+    rect(width / 8, height / 5 + 270, 250, 100);
+    c1 = "red";
+    c2 = "black";
+    noStroke();
+    textSize(13);
+    fill(20);
+    text("Character: " + Chr1.character, width / 8 + 5, height / 5 + 290);
+    text(
+      "Definition: " + Chr1.definition,
+      width / 8 + 5,
+      height / 5 + 300,
+      245,
+      20
+    );
+    text("Pinyin: " + Chr1.pinyin, width / 8 + 5, height / 5 + 332);
+  } else if (
+    mouseX > width / 2 + 150 &&
+    mouseX < width / 2 + 300 &&
+    mouseY > height / 2 - 150 &&
+    mouseY < height / 2 + 150
+  ) {
+    rect(width / 8, height / 5 + 270, 250, 100);
+    c2 = "red";
+    c1 = "black";
+    noStroke();
+    textSize(13);
+    fill(20);
+    text("Character: " + Chr2.character, width / 8 + 5, height / 5 + 290);
+    text(
+      "Definition: " + Chr2.definition,
+      width / 8 + 5,
+      height / 5 + 300,
+      245,
+      30
+    );
+    text("Pinyin: " + Chr2.pinyin, width / 8 + 5, height / 5 + 350);
+  } else {
+    c1 = "black";
+    c2 = "black";
+    rect(width / 8, height / 5 + 270, 250, 100);
+  }
+
+    pop();
+    
+  }
+}
+
+  
+
+  
+
+</script>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+        
+<p><a href="index.html">Back to home page -></a></p>
+
+    </section>
+    </div>
+    <footer>
+    
+      <p>Project maintained by <a href="https://github.com/StevenZhou01">StevenZhou01</a></p>
+    
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
