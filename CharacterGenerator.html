@@ -59,7 +59,7 @@
 
 <p>This is the demo of the Sawndip character generator.</p>
 <p>It shows the generative characters of "lanaguage". Click to get a new one!</p>   
-
+<div id="demoForHTML"></div>
     <script>
     let zhuang;
 let chinese;
@@ -190,7 +190,8 @@ function preload() {
 }
 
 function setup() {
-  canvas = createCanvas(500, 500);
+   canvas = createCanvas(500, 500);
+  canvas.parent('demoForHTML');
   background(255);
   step = floor(random(2));
 
@@ -317,7 +318,6 @@ function setup() {
 }
 
 function draw() {
-  canvas.position(windowWidth/2-350,windowHeight/2-90);
   background(255);
   rectMode(CENTER);
   stroke(0, 50);
@@ -808,31 +808,7 @@ function mouseClicked() {
 }
 
     </script>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-         
+<br/>       
 <p><a href="index.html">Back to home page -></a></p>
 
     </section>
