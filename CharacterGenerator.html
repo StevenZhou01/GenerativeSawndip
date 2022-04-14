@@ -191,7 +191,6 @@ function preload() {
 
 function setup() {
   canvas = createCanvas(500, 500);
-  canvas.position(370,270)
   background(255);
   step = floor(random(2));
 
@@ -318,6 +317,7 @@ function setup() {
 }
 
 function draw() {
+  canvas.position(windowWidth/2-350,windowHeight/2-90);
   background(255);
   rectMode(CENTER);
   stroke(0, 50);
