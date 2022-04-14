@@ -36,7 +36,7 @@ function setup() {
   //background(180);
  // colorMode(HSB, 100);
 //  scale(0.8);
-  displayInfo();
+//  displayInfo();
 }
 
 function displayInfo() {
