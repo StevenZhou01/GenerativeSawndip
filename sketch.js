@@ -31,15 +31,18 @@ let rule = 4;
 let c1 = "black";
 
 function setup() {
-  let cnv = createCanvas(580, 400);
-  cnv.id("zl");
-  background(180);
-  colorMode(HSB, 100);
-  scale(0.8);
+  //let cnv = createCanvas(580, 400);
+ // cnv.id("zl");
+  //background(180);
+ // colorMode(HSB, 100);
+//  scale(0.8);
   displayInfo();
 }
 
 function displayInfo() {
+  background(180);
+ colorMode(HSB, 100);
+  scale(0.8);
   stroke(20);
   strokeWeight(1);
   fill(60, 60, 70);
