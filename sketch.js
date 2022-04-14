@@ -31,7 +31,8 @@ let rule = 4;
 let c1 = "black";
 
 function setup() {
-  createCanvas(580, 400);
+  let cnv = createCanvas(580, 400);
+  cnv.id("zl");
   background(180);
   colorMode(HSB, 100);
   scale(0.8);
