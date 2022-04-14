@@ -287,11 +287,11 @@ function preload() {
 function setup() {
   background(100);
   canvas = createCanvas(600, 300);
-  canvas.position(370,270);
   colorMode(HSB, 100);
 }
 
 function draw() {
+  canvas.position(windowWidth/2-350,windowHeight/2-90);
   image(img, 0, 0, 600, 300);
   stroke(20, 50);
   strokeWeight(0.2);
