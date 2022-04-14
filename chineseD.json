@@ -17,13 +17,13 @@
         "radical": "尸"
     },
     {
-       "character": "由",
-        "definition": "cause, reason; from",
-        "pinyin": [
+        "character": "由",
+        "definition": "cause, reason; from",
+        "pinyin": [
             "yóu"
         ],
-        "decomposition": "田",
-        "radical": "田"
+        "decomposition": "田",
+        "radical": "田"
     },{
         "character": "㥯",
         "definition": "careful, prudent; compassionate; grieved; worried",
@@ -49,14 +49,14 @@
         "decomposition": "⿵冂？",
         "radical": "用"
     },{
-        "character": "雨",
-        "definition": "rain",
-        "pinyin": [
+        "character": "雨",
+        "definition": "rain",
+        "pinyin": [
             "yǔ"
         ],
-         "decomposition": "⿻帀？",
-         "radical": "雨"
-    }, {
+        "decomposition": "⿻帀？",
+        "radical": "雨"
+    },{
         "character": "呀",
         "definition": "particle used to express surprise",
         "pinyin": [
@@ -81,12 +81,13 @@
         "decomposition": "⿱亠⿱二口",
         "radical": "言"
     },{
-      "character": "燕",
-        "definition": "lovebird, swallow",
-        "pinyin": [
-               "yàn"
+        "character": "燕",
+        "definition": "lovebird, swallow",
+        "pinyin": [
+            "yàn"
         ],
-        "decomposition": "⿱⿱廿⿻口北灬",
-        "radical": "灬"
-         }
+        "decomposition": "⿱⿱廿⿻口北灬",
+        "radical": "灬"
+    }]
+}
 
