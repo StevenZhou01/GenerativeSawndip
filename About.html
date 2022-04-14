@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Generative Sawndip | GenerativeSawndip</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Generative Sawndip" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Generative Language Art Project" />
+<meta property="og:description" content="Generative Language Art Project" />
+<link rel="canonical" href="https://stevenzhou01.github.io/GenerativeSawndip/" />
+<meta property="og:url" content="https://stevenzhou01.github.io/GenerativeSawndip/" />
+<meta property="og:site_name" content="GenerativeSawndip" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Generative Sawndip" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Generative Language Art Project","headline":"Generative Sawndip","name":"GenerativeSawndip","url":"https://stevenzhou01.github.io/GenerativeSawndip/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link rel="stylesheet" href="/GenerativeSawndip/assets/css/style.css?v=2e6fe7b181c29a64a12118f95920b48b1df21686">
+    <script src="/GenerativeSawndip/assets/js/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/GenerativeSawndip/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header >
+        <h1>GenerativeSawndip</h1>
+        
+          <p>Generative Language Art Project</p>
+        
+      </header>
+      <section>
+
+      <h2 >About</h2>
+
+<h4>Artist Statement</h4>
+<p>Sawndip is a logographic Chinese-derived writing system traditionally used by Tai-speaking people in Southern China and Northern Vietnam including ethnic Zhuang groups. Due to the lack of standardization, there are many variations of Sawndip characters. Generative Sawndip is a generative language art project using computer algorithms to create new Sawndip characters for the Zhuang minority language. Inspired by critical software art and generative art, I explored the possibilities between computer programming and critical social issues to find innovative ways of connecting underrepresented ethnic minority cultures with modern computer techniques. By using language data and following the historical rules of making Sawndip characters, the project generates the non-existing characters showing the nature of the Sawndip writing system and the Zhuang language culture. As a half Chinese and half Zhuang, the project is also to explore my cultural heritage and identity by making my version of Sawndip characters.</p>        
+<br/>
+<h4>Generating Process</h4>
+<p><img width="450" alt="Algorithm.jpg"></p>
+<br/>
+<h4>How do I find the Chinese characters based on the meaning and pronunciation of Zhuang words?</h4>
+<p>First of all, when inputting the Zhuang word, I also input a Chinese character (or two) that can indicate the same meaning of the Zhuang word. Therefore, later on, in any situation that needs to use the meaning-match Chinese characters, the inputted Chinese characters will be used. If you want to try my code but do not know Chinese, you can check <a href="https://editor.p5js.org/steven_zhou2000/sketches/fD4RjjXYM">this link</a>, which is a p5.js sketch that helps you find the meaning-matching Chinese characters.
+</p>
+<br/>
+<p>For the pronunciation-matching character, I use "regular expression” to search for letters. Let's take the word "Bouxcuengh" (the Zhuang people) as an example. I use the International Phonetic Alphabets (IPA) of the word, which is the "sound" entry in the JSON file. First, input the sound of the word as a string value. For "Bouxcuengh", it's "/pou˦˨ ɕuːŋ˧/". Second, since Zhuang words can be both monosyllabic and multisyllabic, I check if the sound string contains "spaces". If yes, then it's a multisyllabic word, so "Bouxcuengh" is a multisyllabic word. Third, according to Soundex, a phonetic algorithm, consonants mainly affect pronunciation similarity. Therefore, I match the consonants of syllables for pronunciation or the first IPA letter if the syllable doesn't have a consonant. Here is the table to show how the Zhuang alphabets match with the Chinese pinyin. Some letters may be correspondent to multiple pinyin letters, so the algorithm will randomly choose one to match.</p>
+<p><img width="250" alt="Map"></p>
+<br/>
+<h4>Run the code locally</h4>
+<p>You need “character_generator_code.js” and the JSON files in “Sorted_data”.</p>
+<br/>
+<p><a href="index.html">Back to home page -></a></p>
+      </section>
+    </div>
+    <footer>
+    
+      <p>Project maintained by <a href="https://github.com/StevenZhou01">StevenZhou01</a></p>
+    
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>
