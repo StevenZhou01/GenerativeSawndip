@@ -58,13 +58,13 @@
 <p>Sawndip is a logographic Chinese-derived writing system traditionally used by Tai-speaking people in Southern China and Northern Vietnam including ethnic Zhuang groups. Due to the lack of standardization, there are many variations of Sawndip characters. Generative Sawndip is a generative language art project using computer algorithms to create new Sawndip characters for the Zhuang minority language. Inspired by critical software art and generative art, I explored the possibilities between computer programming and critical social issues to find innovative ways of connecting underrepresented ethnic minority cultures with modern computer techniques. By using language data and following the historical rules of making Sawndip characters, the project generates the non-existing characters showing the nature of the Sawndip writing system and the Zhuang language culture. As a half Chinese and half Zhuang, the project is also to explore my cultural heritage and identity by making my version of Sawndip characters.</p>        
 <br/>
 <h4>Generating Process</h4>
-<p><img width="450" src="./Algorithm.jpg"></p>
+<p><a href="./Algorithm.jpg"><img width="450" src="./Algorithm.jpg"></a></p>
 <br/>
 <h4>How do I find the Chinese characters based on the meaning and pronunciation of Zhuang words?</h4>
 <p>First of all, when inputting the Zhuang word, I also input a Chinese character (or two) that can indicate the same meaning of the Zhuang word. Therefore, later on, in any situation that needs to use the meaning-match Chinese characters, the inputted Chinese characters will be used. If you want to try my code but do not know Chinese, you can check <a href="https://editor.p5js.org/steven_zhou2000/sketches/fD4RjjXYM">this link</a>, which is a p5.js sketch that helps you find the meaning-matching Chinese characters.</p>
 <br/>
 <p>For the pronunciation-matching character, I use "regular expressions” to search for letters. Let's take the word "Bouxcuengh" (the Zhuang people) as an example. First I lookup the phonemes for the word, using the International Phonetic Alphabets (IPA) system. For "Bouxcuengh", the phonemes are "/pou˦˨ ɕuːŋ˧/". Second, since Zhuang words can be either monosyllabic and multisyllabic, I check if the phoneme string contains one or more spaces. If so, then it's a multisyllabic word, as in the case of "Bouxcuengh". Third, according to the commonly-used Soundex phonetic algorithm, it is consonants that primarily affect pronunciation similarity. Therefore, I match the consonants of the syllables for pronunciation, or the first IPA phone if the syllable doesn't contain a consonant. The table below demonstrates the mapping from the Zhuang alphabet to Chinese pinyin. Some letters may correspond to multiple pinyin letters, so, in these cases, the algorithm randomly selects one of the options, and then returns the pronunciation-matching character.</p>
-<p><img width="400" src="./Map.png"></p>
+<p><a href="./Map.png"><img width="400" src="./Map.png"></a></p>
 <br/>
 <h4>Run the code locally</h4>
 <p>You need “character_generator_code.js” and the JSON files in “Sorted_data”.</p>
