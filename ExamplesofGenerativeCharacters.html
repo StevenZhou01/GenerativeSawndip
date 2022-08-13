@@ -565,25 +565,25 @@ function displayInfo() {
   text("Pronunciation: " + zhuang.sound, width / 8 + 5, height / 5 + 80);
   text("Decomposition: " + d, width / 8 + 5, height / 5 + 100);
   if (rule == 1) {
-    text("Rule: Non-standard Chinese-like characters created via semantic compounds.", width / 8 + 5, height / 5 + 120);
+    text("Rule: Non-standard Chinese-like characters created via semantic compounds.", width / 8 + 5, height / 5 + 110, 230, 50);
   } else if (rule == 2) {
-    text("Rule: Non-standard Chinese-like characters created via phono-semantic compounds.", width / 8 + 5, height / 5 + 120);
+    text("Rule: Non-standard Chinese-like characters created via phono-semantic compounds.", width / 8 + 5, height / 5 + 110,230,50);
   } else if (rule == 3) {
     text(
-      "Rule: Standard Chinese characters are borrowed solely for pronunciations.",
+     "Rule: Standard Chinese characters are borrowed solely for pronunciations.",
       width / 8 + 5,
-      height / 5 + 120
+      height / 5 + 110, 230, 50
     );
   } else if (rule == 4) {
     text(
       "Rule: Standard Chinese characters are borrowed solely for their meanings.",
       width / 8 + 5,
-      height / 5 + 120
+      height / 5 + 110, 230, 50
     );
   } else if (rule == 5) {
-    text("Rule: Indicative ideograms (the character’ s components).", width / 8 + 5, height / 5 + 120);
+    text("Rule: Indicative ideograms (the characters' radicals or components).", width / 8 + 5, height / 5 + 110,230,50);
   } else if (rule == 6) {
-    text("Rule: Characters are made by phonetic compounds to "/"spell out"/" the pronunciation of the Zhuang word.", width / 8 + 5, height / 5 + 120);
+    text("Rule: Characters are made by phonetic compounds to \"spell out\" the pronunciation of the Zhuang word.", width / 8 + 5, height / 5 + 110, 230,50);
   }
 }
 
