@@ -82,8 +82,19 @@
 <p>This is the demo of the Sawndip character generator. It may need a bit time to load.</p>
 <p>It shows the possible generative characters of "yijyenz" (language). Click to get a new one!</p>   
 <div id="demoForHTML"></div>
-<div class="loader"></div>
-    <script>
+<div id="loader"></div>
+<script>
+  
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader");
+}
+  
 let zhuang;
 let chinese;
 let chineseG;
@@ -205,16 +216,6 @@ let components = [
 //all IPA of the Zhuang letters : ["p","ɓ","m", "f","t","ɗ", "n","ŋ","ɲ","l","k","h","ɕ","ɣ","θ","j","β","ɯ","a","i","e","u","o",];
 
 var canvas;
-
-var myVar;
-
-function myFunction() {
-  myVar = setTimeout(showPage, 3000);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-}
           
 function preload() {
   zhuang = loadJSON("zhuang.json");
