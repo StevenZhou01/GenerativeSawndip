@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <style>
-.loader {
+#loader {
   border: 16px solid #FFFFFF;
   border-radius: 50%;
   border-top: 16px solid #3498db;
@@ -66,7 +66,7 @@
 <!-- end custom head snippets -->
 
   </head>
-  <body>
+  <body onload="myFunction()" style="margin:0;">
     <div class="wrapper">
       <header >
         <a href="index.html"><h1>Generative Sawndip</h1></a>
@@ -206,28 +206,15 @@ let components = [
 
 var canvas;
 
-var loader;
+var myVar;
 
-function loadNow(opacity) {
-    if (opacity <= 0) {
-        displayContent();
-    } else {
-        loader.style.opacity = opacity;
-        window.setTimeout(function() {
-            loadNow(opacity - 0.05);
-        }, 50);
-    }
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
 }
 
-function displayContent() {
-    loader.style.display = 'none';
-    document.getElementById('content').style.display = 'block';
+function showPage() {
+  document.getElementById("loader").style.display = "none";
 }
-
-document.addEventListener("DOMContentLoaded", function() {
-    loader = document.getElementById('loader');
-    loadNow(1);
-});
           
 function preload() {
   zhuang = loadJSON("zhuang.json");
