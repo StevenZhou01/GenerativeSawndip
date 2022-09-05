@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <style>
-.loader {
+#loader {
   border: 16px solid #FFFFFF;
   border-radius: 50%;
   border-top: 16px solid #3498db;
@@ -84,7 +84,7 @@
 <div id="demoForHTML"></div>
 <div class="loader"></div>
     <script>
-    let zhuang;
+let zhuang;
 let chinese;
 let chineseG;
 
@@ -205,7 +205,10 @@ let components = [
 //all IPA of the Zhuang letters : ["p","ɓ","m", "f","t","ɗ", "n","ŋ","ɲ","l","k","h","ɕ","ɣ","θ","j","β","ɯ","a","i","e","u","o",];
 
 var canvas;
-      
+var preloader = document.getElementById('loader');
+function preLoaderHandler(){
+    preloader.style.display = 'none';
+}    
 function preload() {
   zhuang = loadJSON("zhuang.json");
   chinese = loadJSON("chineseD.json");
