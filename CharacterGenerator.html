@@ -205,10 +205,30 @@ let components = [
 //all IPA of the Zhuang letters : ["p","ɓ","m", "f","t","ɗ", "n","ŋ","ɲ","l","k","h","ɕ","ɣ","θ","j","β","ɯ","a","i","e","u","o",];
 
 var canvas;
-var preloader = document.getElementById('loader');
-function preLoaderHandler(){
-    preloader.style.display = 'none';
-}    
+
+var loader;
+
+function loadNow(opacity) {
+    if (opacity <= 0) {
+        displayContent();
+    } else {
+        loader.style.opacity = opacity;
+        window.setTimeout(function() {
+            loadNow(opacity - 0.05);
+        }, 50);
+    }
+}
+
+function displayContent() {
+    loader.style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    loader = document.getElementById('loader');
+    loadNow(1);
+});
+          
 function preload() {
   zhuang = loadJSON("zhuang.json");
   chinese = loadJSON("chineseD.json");
