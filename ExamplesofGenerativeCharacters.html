@@ -728,7 +728,7 @@ function displayCharacter() {
   }
   pop();
   
-  }else if (item =="Han Chinese"||item =="Zhuang people"){
+  }else if (item =="Han Chinese"){
     push();
     scale(0.8);
   translate(200, 100);
@@ -817,6 +817,94 @@ function displayCharacter() {
 
     pop();
     
+  }else if(item == "Zhuang people"){
+    push();
+    scale(0.8);
+  translate(200, 100);
+  fill(100);
+  stroke(20);
+  rect(width / 2, height / 2 - 150, 300, 300);
+  stroke(20, 30);
+  line(width / 2, height / 2, width / 2 + 300, height / 2);
+  line(width / 2 + 150, height / 2 - 150, width / 2 + 150, height / 2 + 150);
+
+  translate(width / 2, height / 2 + 120);
+
+  push();
+  translate(80, 0);
+  scale(0.2, -0.3);
+  let ctx02 = drawingContext;
+  ctx02.fillStyle = c2;
+  ctx02.strokeStyle = c2;
+  for (let j = 0; j < chr02.strokes.length; j++) {
+    p = new Path2D(chr02.strokes[j]);
+    ctx02.fill(p);
+  }
+
+  translate(-350, 0);
+  scale(0.7, 1);
+  let ctx01 = drawingContext;
+  ctx01.fillStyle = c1;
+  ctx01.strokeStyle = c1;
+  for (let j = 0; j < chr01.strokes.length; j++) {
+    p = new Path2D(chr01.strokes[j]);
+    ctx01.fill(p);
+  }
+  pop();
+    pop();
+    
+    push();
+    fill(100);
+  stroke(20);
+  if (
+    mouseX > width / 2 &&
+    mouseX < width / 2 + 150 &&
+    mouseY > height / 2 - 150 &&
+    mouseY < height / 2 + 150
+  ) {
+    rect(width / 8, height / 5 + 270, 250, 100);
+    c1 = "red";
+    c2 = "black";
+    noStroke();
+    textSize(13);
+    fill(20);
+    text("Character: " + Chr1.character, width / 8 + 5, height / 5 + 290);
+    text(
+      "Definition: " + Chr1.definition,
+      width / 8 + 5,
+      height / 5 + 300,
+      245,
+      20
+    );
+    text("Pinyin: " + Chr1.pinyin, width / 8 + 5, height / 5 + 332);
+  } else if (
+    mouseX > width / 2 + 150 &&
+    mouseX < width / 2 + 300 &&
+    mouseY > height / 2 - 150 &&
+    mouseY < height / 2 + 150
+  ) {
+    rect(width / 8, height / 5 + 270, 250, 100);
+    c2 = "red";
+    c1 = "black";
+    noStroke();
+    textSize(13);
+    fill(20);
+    text("Character: " + Chr2.character, width / 8 + 5, height / 5 + 290);
+    text(
+      "Definition: " + Chr2.definition,
+      width / 8 + 5,
+      height / 5 + 300,
+      245,
+      30
+    );
+    text("Pinyin: " + Chr2.pinyin, width / 8 + 5, height / 5 + 350);
+  } else {
+    c1 = "black";
+    c2 = "black";
+    rect(width / 8, height / 5 + 270, 250, 100);
+  }
+
+    pop();
   }
 }
 
