@@ -64,11 +64,11 @@
 <p>5. Non-standard Chinese-like characters are created specifically for Zhuang to indicate the meaning (in accordance with indicative ideograms). E.g. for the word “raemx” (water), "氵" is the Chinese radical to represent “water”.</p>  
 <p>6. New characters are made by juxtaposing a pair of Chinese characters that “spell out” the pronunciation of the Zhuang word, which refers to the “fanqie” system in Chinese. E.g. for the word "Bouxhek" ("ethnic Chinese, guest”), its pronunciation is "/pou˦˨ heːk˧˥/“. “布” (bù) represents the first syllable and “會” (huì) represents the second syllable.</p>   
 <h4>Generating Process</h4>
-<p><a href="./Algorithm.jpg"><img width="450" src="./Algorithm.jpg"></a></p>
+<p><img width="450" src="./Algorithm.jpg"></p>
 <h4>How do I find the Chinese characters based on the meaning and pronunciation of Zhuang words?</h4>
 <p>First of all, when inputting the Zhuang word, I also input a Chinese character (or two) that can indicate the same meaning of the Zhuang word. Therefore, later on, in any situation that needs to use the meaning-match Chinese characters, the inputted Chinese characters will be used. If you want to try my code but do not know Chinese, you can check <a href="https://editor.p5js.org/steven_zhou2000/sketches/fD4RjjXYM">this link</a>, which is a p5.js sketch that helps you find the meaning-matching Chinese characters.</p>
 <p>For the pronunciation-matching character, I use "regular expressions” to search for letters. Let's take the word "Bouxcuengh" (the Zhuang people) as an example. First I lookup the phonemes for the word, using the International Phonetic Alphabets (IPA) system. For "Bouxcuengh", the phonemes are "/pou˦˨ ɕuːŋ˧/". Second, since Zhuang words can be either monosyllabic and multisyllabic, I check if the phoneme string contains one or more spaces. If so, then it's a multisyllabic word, as in the case of "Bouxcuengh". Third, according to the commonly-used Soundex phonetic algorithm, it is consonants that primarily affect pronunciation similarity. Therefore, I match the consonants of the syllables for pronunciation, or the first IPA phone if the syllable doesn't contain a consonant. The table below demonstrates the mapping from the Zhuang alphabet to Chinese pinyin. Some letters may correspond to multiple pinyin letters, so, in these cases, the algorithm randomly selects one of the options, and then returns the pronunciation-matching character.</p>
-<p><a href="./Map.png"><img width="400" src="./Map.png"></a></p>
+<p><img width="400" src="./Map.png"></p>
 <h4>Run the code locally</h4>
 <p>You need “character_generator_code.js” and the JSON files in “Sorted_data”.</p>
 <p><a href="index.html">Back to home page -></a></p>
