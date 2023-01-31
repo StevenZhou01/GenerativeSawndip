@@ -1,1 +1,83 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Generative Sawndip | GenerativeSawndip</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Generative Sawndip" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Generative Language Art Project" />
+<meta property="og:description" content="Generative Language Art Project" />
+<link rel="canonical" href="https://stevenzhou01.github.io/GenerativeSawndip/" />
+<meta property="og:url" content="https://stevenzhou01.github.io/GenerativeSawndip/" />
+<meta property="og:site_name" content="GenerativeSawndip" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Generative Sawndip" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Generative Language Art Project","headline":"Generative Sawndip","name":"GenerativeSawndip","url":"https://stevenzhou01.github.io/GenerativeSawndip/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link rel="stylesheet" href="/GenerativeSawndip/assets/css/style.css?v=2e6fe7b181c29a64a12118f95920b48b1df21686">
+    <script src="/GenerativeSawndip/assets/js/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/GenerativeSawndip/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header >
+        <a href="index.html"><h1>Generative Sawndip</h1></a>
+        
+          <p>Generative Language Art Project</p>
+        
+       
+      </header>
+      <section>
+
+      <h2 id="generative-sawndip">Generative Sawndip</h2>
+
+<p><img width="150" alt="Screen Shot 2022-04-13 at 11 50 34 PM" src="https://user-images.githubusercontent.com/89897082/163220288-55ab0ca5-10bc-49be-a112-c0bc65216fba.png" /><img width="150" alt="Screen Shot 2022-04-13 at 11 47 40 PM" src="https://user-images.githubusercontent.com/89897082/163220299-4fb8e17f-1651-49e9-a93a-769316ad5ef3.png" /></p>
+
+<p><em>Dennauj Sawndip (Computer Sawndip Characters)</em></p>
+
+<p>Generative Sawndip is a computer generative language art project creating new writing characters for the Zhuang minority language. Sawndip is a logographic Chinese-derived writing system traditionally used by Tai-speaking people in Southern China and Northern Vietnam including ethnic Zhuang groups. The lack of standardization resulted in many variations of Sawndip characters across regions and even individuals. This project used computer coding to create my new version of Sawndip characters. </p>
+
+<p><a href="ExamplesofGenerativeCharacters.html"><strong style="color:rgb(0,101,153,255);">- Examples of Generative Characters</strong></a></p>
+
+<p><a href="TheOrphanGirlandtheRichGirl.html"><strong style="color:rgb(0,101,153,255);">- The Orphan Girl and the Rich Girl ("the Zhuang Cinderella")</strong></a></p>
+
+<p><a href="CharacterGenerator.html"><strong style="color:rgb(0,101,153,255);">- Character Generator (Demo)</strong></a></p>
+
+<p><a href="About.html"><strong style="color:rgb(0,101,153,255);">- About</strong></a></p>
+
+<p><a href="Credits.html"><strong style="color:rgb(0,101,153,255);">- Credits &amp; Acknowledgement</strong></a></p>
+
+      </section>
+    </div>
+    <footer>
+    
+      <p>Project maintained by Steven Zhou</p>
+    
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>
